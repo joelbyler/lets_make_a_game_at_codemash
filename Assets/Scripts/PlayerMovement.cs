@@ -71,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
 			float m_ForwardAmount = move.z;
 
 			anim.SetFloat("Speed", Mathf.Abs(m_ForwardAmount));
-			//anim.SetFloat("Turn", m_TurnAmount);	//This MAY be commented our during the workshop if there is time to set up an animation blend for turning
+			anim.SetFloat("Turn", m_TurnAmount);	//This MAY be commented our during the workshop if there is time to set up an animation blend for turning
 
 			//Debug.Log("Player Running...");	//Not necessarily to be uncommented, I just wanted you to see how to output to the console window
 		}
@@ -81,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
 			navMarker.SetActive(false);
 
 			anim.SetFloat("Speed", 0f);
-			//anim.SetFloat("Turn", 0f);	//This MAY be commented our during the workshop if there is time to set up an animation blend for turning
+			anim.SetFloat("Turn", 0f);	//This MAY be commented our during the workshop if there is time to set up an animation blend for turning
 
 			//Debug.Log("Player Stopping...");	//Not necessarily to be uncommented, I just wanted you to see how to output to the console window
 		}
