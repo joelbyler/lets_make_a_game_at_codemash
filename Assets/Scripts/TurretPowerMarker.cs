@@ -1,6 +1,7 @@
 ﻿//This script determines of the runner has landed on the turret power marker and powers the turret down 
 
 using UnityEngine;
+using UnityEngine.Analytics;
 
 public class TurretPowerMarker : MonoBehaviour
 {
@@ -12,5 +13,6 @@ public class TurretPowerMarker : MonoBehaviour
 			return;
 
 		turret.TurnOff();
+		Analytics.CustomEvent ("TurrentP Powered Down", null);
 	}
 }
