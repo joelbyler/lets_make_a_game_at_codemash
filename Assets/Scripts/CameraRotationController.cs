@@ -20,14 +20,14 @@ public class CameraRotationController : MonoBehaviour
 
 	public void RotateCW()
 	{
-		transform.Rotate(0f, -rotationIncrement, 0f);	//Instant rotation, will be commented out
-		//StartRotation(-rotationIncrement);			//Smooth rotation, will be uncommented
+		//transform.Rotate(0f, -rotationIncrement, 0f);	//Instant rotation, will be commented out
+		StartRotation(-rotationIncrement);			//Smooth rotation, will be uncommented
     }
 
 	public void RotateCCW()
 	{
-		transform.Rotate(0f, rotationIncrement, 0f);	//Instant rotation, will be commented out
-		//StartRotation(rotationIncrement);				//Smooth rotation, will be uncommented
+		//transform.Rotate(0f, rotationIncrement, 0f);	//Instant rotation, will be commented out
+		StartRotation(rotationIncrement);				//Smooth rotation, will be uncommented
     }
 
 	void StartRotation(float angle)
