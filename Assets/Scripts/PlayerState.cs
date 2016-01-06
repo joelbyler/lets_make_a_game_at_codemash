@@ -42,6 +42,7 @@ public class PlayerState : MonoBehaviour
 		//The runner isn't valid and can't move
 		isValidTarget = false;
 		playerMovement.enabled = false;
+		GetComponent<NavMeshAgent> ().Stop ();
 	}
 
 	//Public method called by the UI to reload the scene
